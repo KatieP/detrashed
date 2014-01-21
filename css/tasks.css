@@ -3,6 +3,7 @@ body {
 	padding: 3%;
 }
 
+
 #left-column {
 	width: 12%;
 	border-width: 1px;
@@ -22,14 +23,53 @@ body {
 	left: 20%;
 }
 
+#general-text {
+	font-family: 'my_underwoodregular', helvetica, arial, tahoma;
+	color: orange;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 0.6em 0em 0.2em 0.7em;
+	
+}
+
+/*Slide/Tasks*/
+
 #slide-container {
 	height: 70%;
 	border-width: 1px;
 	border-color: #cecccc;
 	border-style: solid;
-	border-radius: 5px;
- 	
+	border-radius: 5px; 	
 }
+
+#task-text {
+	height: 80%;
+	width: 40%;
+	font-family: helvetica, arial, tahoma;
+	color: gray;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	margin-left: 1.0em;
+	margin-right: 1.0em;
+	padding: 0.5em;
+	position: absolute;
+}
+
+#task-image {
+	position: relative;
+	left:45%;
+	height: 85%;
+	width: 53%;
+
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+
+}
+
+/*Check Buttons*/
 
 #check-buttons {
 	height: 30%;
@@ -42,10 +82,19 @@ body {
 
 }
 
+#check-box-text {
+	font-family: helvetica, arial, tahoma;
+	color: gray;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	padding-right: 0.5em;
+	padding: 0.5em;
+}
+
+
 #check-buttons-column1 {
 	height: 20%;
-	width: 27%;
-	border: 2px dotted red;
+	width: 23%;
 	position: absolute;
 	margin-left:2%;
 	margin-right: 2%;
@@ -55,8 +104,7 @@ body {
 
 #check-buttons-column2 {
 	height: 20%;
-	width: 27%;
-	border: 2px dotted green;
+	width: 23%;
 	position: absolute;
 	left: 33%;
 	margin-left:2%;
@@ -67,8 +115,7 @@ body {
 
 #check-buttons-column3 {
 	height: 20%;
-	width: 27%;
-	border: 2px dotted blue;
+	width: 23%;
 	position: absolute;
 	left: 65%;
 	margin-left:2%;
@@ -76,6 +123,9 @@ body {
 	text-align: center;
 
 }
+
+
+/*Progress Bar*/
 
 #progress-bar-container {
 	height: 10%;
@@ -87,23 +137,6 @@ body {
 	margin-top: 0.5em;
 	margin-bottom: 3.0em;
 
-}
-
-#general-text {
-	font-family: 'my_underwoodregular', helvetica, arial, tahoma;
-	color: orange;
-	font-size: 1.2em;
-	line-height: 1.2em;
-	margin: 0.6em 0em 0.2em 0.7em;
-	
-}
-
-#check-box-text {
-	font-family: helvetica, arial, tahoma;
-	color: gray;
-	font-size: 1.0em;
-	padding-right: 0.5em;
-	padding: 0.5em;
 }
 
 
@@ -132,21 +165,7 @@ input[type='checkbox']:checked {
     background: orange;
 }
 
-#landfill-bar {
-  background-color: #cecccc;
-  border-radius: 13px; /* (height of inner div) / 2 + padding */
-  padding: 3px;
-  position: relative;
- 
-}
 
-#landfill-bar > div {
-   background-color: #41e02c;
-   width: 30%; /* Adjust with JavaScript */
-   height: 20px;
-   border-radius: 10px;
-  
-}
 
 /*Landfill Vertical*/
 .outer {
