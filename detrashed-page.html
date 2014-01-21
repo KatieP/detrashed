@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/tasks.css">
+		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
+		
+		<!--Landfill vertical banner js-->
+
+
+	</head>
+
+	<body>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script>
+		$('.skill').on('click', 'button', function(){
+		    var skillBar = $(this).siblings().find('.inner');
+		    var skillVal = skillBar.attr("data-progress");
+		    $(skillBar).animate({
+		        height: skillVal
+		    }, 1500);
+		});
+		</script>
+
+
+	<div id ="left-column">
+		<div id = "general-text">Landfill score<br />
+			67%
+			
+			<div class="skill">
+			    
+			    <div class="outer">
+			        <div class="inner" data-progress="57%" style="height: 57%;">
+			            <div></div>
+
+			        </div>        
+			    </div>
+			    <button>Show value</button>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id ="centre-column">
+
+		<div id ="slide-container">
+			<div id = "general-text">#34 Your task title</div>
+
+		</div>
+
+		<div id ="check-buttons">
+			<div id = "general-text">Your choice</div>
+
+			<form>
+				<div id ="check-box-text">
+
+					<div id ="check-buttons-column1">
+						<input type="checkbox" name="vehicle" value="1"><br />Not yet, but I might do this soon
+					</div>
+					
+					<div id ="check-buttons-column2">
+						<input type="checkbox" name="vehicle" value="2"><br />Yup, I've started! 
+					</div>
+					
+					<div id ="check-buttons-column3">
+						<input type="checkbox" name="vehicle" value="3"><br />I'm a master, been doing it for 12 months
+					</div>
+
+				</div>
+			</form>
+
+		</div>
+
+
+
+
+
+		<div id ="progress-bar-container"> 
+			<div id = "general-text">Your Progress</div>
+
+			<div id="progress-bar">
+  				<div></div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+		
+
+			
+
+
+
+	</body>
+</html>
