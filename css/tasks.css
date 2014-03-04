@@ -256,6 +256,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 
 }
 
@@ -271,6 +272,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 
 }
 
@@ -286,6 +288,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 }
 
 #dashboard-cube-3  :hover {
@@ -300,6 +303,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 	
 }
 
@@ -316,6 +320,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 }
 
 #dashboard-cube-5 :hover {
@@ -331,6 +336,7 @@ li {
 	border-style: solid;
 	position:absolute;
 	min-width: 40px;
+	max-width: 300px;
 }
 
 #dashboard-cube-6 :hover { 
@@ -343,7 +349,8 @@ li {
 	color: gray;
 	font-size: 1.0em;
 	line-height: 1.6em;
-	padding: 5.5em;
+	padding-top: 4.0em;
+	padding-bottom: 2.0em;
 	position: relative;
 	text-align: center;
 }
@@ -360,5 +367,12 @@ li {
 	text-decoration: none;
 }
 
+#dashboard-icons {
+	font-family: 'entyporegular', helvetica, arial, tahoma;
+	color: gray;
+	font-size: 8.0em;
+	text-align: center;
+	line-height: 1.0em;
+}
 
 
