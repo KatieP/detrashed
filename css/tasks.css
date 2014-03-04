@@ -213,3 +213,152 @@ button {
 
 }
 
+/* Dashboard */
+
+#dashboard-nav a {
+
+	width: 100%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	border-radius: 5px;
+	position: absolute;
+	height:10%;
+	min-width: 40px;
+	font-family: helvetica, arial, tahoma;
+	color: gray;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	padding: 0.5em;
+	position: relative;
+	text-decoration: none;
+
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	margin-bottom: 2em;
+	line-height: 2em;
+}
+
+li {
+	display:inline;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+#dashboard-cube-1 {
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+
+}
+
+#dashboard-cube-1 :hover {
+	background-color:orange;
+}
+
+#dashboard-cube-2 {
+	left: 35%;
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+
+}
+
+#dashboard-cube-2 :hover {
+	background: orange;
+}
+
+#dashboard-cube-3 {
+	left: 65%;
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+}
+
+#dashboard-cube-3  :hover {
+	background:orange;
+}
+
+#dashboard-cube-4 {
+	top: 60%;
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+	
+}
+
+#dashboard-cube-4 :hover {
+	background-color:orange;
+}
+
+#dashboard-cube-5 {
+	top: 60%;
+	left: 35%;
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+}
+
+#dashboard-cube-5 :hover {
+	background-color:orange;
+}
+
+#dashboard-cube-6 {
+	top: 60%;
+	left: 65%;
+	width: 28%;
+	border-width: 1px;
+	border-color: #cecccc;
+	border-style: solid;
+	position:absolute;
+	min-width: 40px;
+}
+
+#dashboard-cube-6 :hover { 
+	background-color:orange;
+}
+
+
+#dashboard-cube-text {
+	font-family: helvetica, arial, tahoma;
+	color: gray;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	padding: 5.5em;
+	position: relative;
+	text-align: center;
+}
+
+
+#dashboard-cube-text a {
+	font-family: helvetica, arial, tahoma;
+	color: gray;
+	font-size: 1.0em;
+	line-height: 1.6em;
+	padding: 2.5em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
