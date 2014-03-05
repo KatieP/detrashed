@@ -6,7 +6,25 @@
 		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/bitstreamverasansmono_roman_macroman/stylesheet.css" type="text/css" />
 		
-		
+	<!--
+	
+	Starting UI flow
+
+	1/ Questions - radion buttons
+
+	2/ Sign up - name, email, location (ask for metric or empirical)
+
+	3/ Starting data - 'You start with 1 tonne of trash. Your quest is to reduce this to zero'
+
+	4/ Tasks (first level) - 5 tasks
+
+	5/ Sucess page - Congratulations! You've cut x kg trash, 
+
+	6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
+
+
+
+	-->
 
 
 	</head>
@@ -14,68 +32,66 @@
 	<body>
 
 		<div id = "large-plain-text">Tell us about yourself, traveller</div>
-		<br />
-		<br />
 
+	<div id = "center-container">
 
-	<form action ="">
+		<table class="tg">
+			  <tr>
+			    <th class="tg-s6z2">
+			    	<div id = "dashboard-cube-text">
+						<div id = "radio-buttons">
+							<input type="radio" name="sex" value="male">Male &nbsp;&nbsp;
+							<input type="radio" name="sex" value="female">Female
+						</div>
+					</div>
+			    </th>
+			    
+			    <th class="tg-031e">
+			    	<div id = "dashboard-cube-text">
+				    	<div id = "radio-buttons">
+							<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
+							<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
+							<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
+						</div>
+					</div>
+			    </th>
 
-	<a href="#">
-		
-	<div id = "questions-cube-1">
-		<div id = "dashboard-cube-text">
-			
-			<div id = "radio-buttons">
-				<input type="radio" name="sex" value="male">Male &nbsp;&nbsp;
-				<input type="radio" name="sex" value="female">Female
-			</div>
-		</div>
+			  </tr>
+
+			  <tr>
+			    <td class="tg-031e">
+			    	
+						<div id = "dashboard-cube-text">
+							I eat . . . </br>
+							<div id = "radio-buttons">
+								<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
+								<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
+								<input type="radio" name="eat" value="vegan">Vegan
+							</div>
+						</div>
+					
+
+			    </td>
+			    <td class="tg-031e">
+
+					
+						<div id = "dashboard-cube-text">
+							I live in an . . . <br />
+							<div id = "radio-buttons">
+								<input type="radio" name="house" value="no-kids">Apartment &nbsp;&nbsp;
+								<input type="radio" name="house" value="baby"> House with a garden
+							</div>
+						</div>
+					
+
+			    </td>
+			  </tr>
+		</table>
+
+		<form action ="">
+
+		</form>
 	</div>
-				
-
-		
-	</a>
-	<a href="#">
-		<div id = "questions-cube-2">
-			<div id = "dashboard-cube-text">
-				
-				<div id = "radio-buttons">
-					<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
-					<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
-					<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
-				</div>
-			</div>
-		</div>
-	</a>
-
-
-	<a href="#">
-		<div id = "questions-cube-4">
-			<div id = "dashboard-cube-text">
-				I eat . . . </br>
-				<div id = "radio-buttons">
-					<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
-					<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
-					<input type="radio" name="eat" value="vegan">Vegan
-				</div>
-			</div>
-		</div>
-	</a>
-
-	<a href="#">
-		<div id = "questions-cube-5">
-			<div id = "dashboard-cube-text">
-				I live in an . . . <br />
-				<div id = "radio-buttons">
-					<input type="radio" name="house" value="no-kids">Apartment &nbsp;&nbsp;
-					<input type="radio" name="house" value="baby"> House with a garden
-				</div>
-			</div>
-		</div>
-	</a>
-
-	</form>
-	
 
 	<clear>
 	

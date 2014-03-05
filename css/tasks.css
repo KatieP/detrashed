@@ -439,82 +439,11 @@ button {
 
 /* Questions */
 
-#questions-cube-1 {
-	left: 15%;
-	width: 35%;
-	border-width: 1px;
-	border-color: #cecccc;
-	border-style: solid;
-	position:absolute;
-	min-width: 40px;
-	max-width: 300px;
-	margin-bottom: 5em;
-	background-color: white;
-
-}
-
-#questions-cube-1 :hover {
-	background-color:#f94343;
-	color:#e5e5e5;
-}
-
-#questions-cube-2 {
-	left: 45%;
-	width: 35%;
-	border-width: 1px;
-	border-color: #cecccc;
-	border-style: solid;
-	position:absolute;
-	min-width: 40px;
-	max-width: 300px;
-	background-color: white;
-
-}
-
-#questions-cube-2 :hover {
-	background: #f94343;
-	color:#e5e5e5;
-}
-
-
-
-#questions-cube-4 {
-	top: 60%;
-	left: 15%;
-	width: 35%;
-	border-width: 1px;
-	border-color: #cecccc;
-	border-style: solid;
-	min-width: 40px;
-	max-width: 300px;
-	position: absolute;
-	margin-bottom: 5em;
-	background-color: white;
-	
-}
-
-#questions-cube-4 :hover {
-	background-color:#f94343;
-	color:#e5e5e5;
-}
-
-#questions-cube-5 {
-	top: 60%;
-	left: 45%;
-	width: 35%;
-	border-width: 1px;
-	border-color: #cecccc;
-	border-style: solid;
-	position:absolute;
-	min-width: 40px;
-	max-width: 300px;
-	margin-bottom: 5em;
-	background-color: white;
-}
-
-#questions-cube-5 :hover {
-	background-color:#f94343;
-	color:#e5e5e5;
+#center-container {
+	text-align: center;
+	margin: 10%;
+	border-style: dashed;
+	border-color: red;
 }
 
 #radio-buttons {
@@ -522,11 +451,46 @@ button {
 	padding: 0.5em;
 }
 
-table, th, td {
-	border-width: 1px;
-	border-color: #cecccc;
-	border-style: solid;
+.tg  {
+	border-collapse:collapse;border-spacing:0;
+	text-align: center;
+	width:80%; margin:auto;
+	height: 25em;
+	background-color: white;
 }
+
+.tg td :hover {
+	background: #f94343;
+	color:#e5e5e5;
+}
+
+.tg td {
+	font-family:Arial, 
+	sans-serif;font-size:
+	14px;padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	border-color: #cecccc;
+}
+
+.tg th {
+	font-family:Arial, 
+	sans-serif;font-size:14px;
+	font-weight:normal;padding:10px 5px;
+	border-style:solid;border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #cecccc;
+}
+
+.tg .tg-s6z2 :hover {
+	text-align:center;
+	background: #f94343;
+	color:#e5e5e5;
+
+}
+
 
 #large-plain-text {
 	font-family: 'bitstream_vera_sans_monoroman', helvetica, arial, tahoma;
