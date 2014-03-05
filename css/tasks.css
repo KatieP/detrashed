@@ -529,7 +529,7 @@ table, th, td {
 }
 
 #large-plain-text {
-	font-family: helvetica, arial, tahoma;
+	font-family: 'bitstream_vera_sans_monoroman', helvetica, arial, tahoma;
 	color: gray;
 	font-size: 2.0em;
 	padding-top: .0em;
@@ -538,7 +538,6 @@ table, th, td {
 	text-align: center;
 
 }
-
 
 
 
