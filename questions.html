@@ -31,53 +31,14 @@
 
 	<body>
 
-
-	<!--Highlights first box 
-
-	box1 is on to start
+	<div id = "large-plain-text">Tell us about yourself, traveller</div>
 	
-	when box 1 is filled, box 1 turns off, box 2 turns on
-	when box 2 is filled, box 2 turns off, box 3 turns on
-	when box 3 is filled, box 3 turns off, box 4 turns on
-	
-	when box 4 is clicked, and all boxes are filled, we go to next page
-
-	if user clicks on any other box that data will store and still go through all 4 boxes
-
-	-->
-
-
-
-	<script>
-	var red=document.getElementsByClassName("tg-031e").style.attribute;
-	document.write(red);
-
-	function() {
-
-		document.getElementById(id).onclick=function(){
-			code
-		}
-	}
-
-	var x = document.getElementById("frm1");
-	var txt = "";
-	for (var i=0;i<x.length;i++)
-	  {
-	  txt = txt + x.elements[i].value + "<br>";
-	  }
-	document.getElementById("demo").innerHTML=txt;
-	
-
-	</script>
-
-		<div id = "large-plain-text">Tell us about yourself, traveller</div>
-
 	<div id = "center-container">
 
 		<table class="tg">
 
 			<tr>
-			    <td class="tg-031e">
+			    <td id="square1">
 
 			    	<div id = "dashboard-cube-text">
 						<div id = "radio-buttons">
@@ -88,7 +49,7 @@
 				
 			
 			    
-			    <td class="tg-031e">
+			    <td id="square2">
 			    	<div id = "dashboard-cube-text">
 				    	<div id = "radio-buttons">
 				    		I eat . . . </br>
@@ -103,7 +64,7 @@
 			</tr>
 
 			  <tr>
-			    <td class="tg-031e">
+			    <td id="square3">
 						<div id = "dashboard-cube-text">
 							
 							<div id = "radio-buttons">
@@ -114,7 +75,7 @@
 							</div>
 						</div>
 			    </td>
-			    <td class="tg-031e">
+			    <td id="square4">
 						<div id = "dashboard-cube-text">
 							I live in an . . . <br />
 							<div id = "radio-buttons">
@@ -127,6 +88,25 @@
 			    </td>
 			  </tr>
 		</table>
+
+		<!--Highlights first box 
+
+		box1 is on to start
+		
+		when box 1 is filled, box 1 turns off, box 2 turns on
+		when box 2 is filled, box 2 turns off, box 3 turns on
+		when box 3 is filled, box 3 turns off, box 4 turns on
+		
+		when box 4 is clicked, and all boxes are filled, we go to next page
+
+		if user clicks on any other box that data will store and still go through all 4 boxes
+
+		-->
+
+		<script>
+		document.getElementById("square1").style.background="#f94343";
+		document.getElementById("dashboard-cube-text").style.color="#e5e5e5";
+		</script>
 
 		<form action ="">
 

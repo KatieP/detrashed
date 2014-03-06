@@ -457,7 +457,7 @@ button {
 	background-color: white;
 }
 
-.tg td :hover {
+.tg .square1, td :hover {
 	background: #f94343;
 	color:#e5e5e5;
 }
@@ -483,11 +483,12 @@ button {
 
 }
 
-.box1 {
-
+.square2 {
+	color:yellow;
 }
 
-.box2 {
+#square2{
+	color:yellow;
 
 }
 
