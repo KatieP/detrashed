@@ -360,11 +360,12 @@ button {
 	font-family: helvetica, arial, tahoma;
 	color: gray;
 	font-size: 1.0em;
-	line-height: 1.6em;
-	padding-top: 3.0em;
-	padding-bottom: 0.5em;
+	line-height: 2.0em;
+	padding-top: 4.0em;
+	padding-bottom: 1.5em;
 	position: relative;
 	text-align: center;
+
 }
 
 
@@ -441,9 +442,7 @@ button {
 
 #center-container {
 	text-align: center;
-	margin: 10%;
-	border-style: dashed;
-	border-color: red;
+	margin: 5% 10% 5% 10%;
 }
 
 #radio-buttons {
@@ -455,7 +454,6 @@ button {
 	border-collapse:collapse;border-spacing:0;
 	text-align: center;
 	width:80%; margin:auto;
-	height: 25em;
 	background-color: white;
 }
 
@@ -464,25 +462,19 @@ button {
 	color:#e5e5e5;
 }
 
+
 .tg td {
 	font-family:Arial, 
 	sans-serif;font-size:
-	14px;padding:10px 5px;
+	14px;
 	border-style:solid;
 	border-width:1px;
 	overflow:hidden;
 	word-break:normal;
 	border-color: #cecccc;
+	width:40%;
 }
 
-.tg th {
-	font-family:Arial, 
-	sans-serif;font-size:14px;
-	font-weight:normal;padding:10px 5px;
-	border-style:solid;border-width:1px;overflow:hidden;
-	word-break:normal;
-	border-color: #cecccc;
-}
 
 .tg .tg-s6z2 :hover {
 	text-align:center;
@@ -491,6 +483,13 @@ button {
 
 }
 
+.box1 {
+
+}
+
+.box2 {
+
+}
 
 #large-plain-text {
 	font-family: 'bitstream_vera_sans_monoroman', helvetica, arial, tahoma;

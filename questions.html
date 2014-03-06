@@ -31,59 +31,99 @@
 
 	<body>
 
+
+	<!--Highlights first box 
+
+	box1 is on to start
+	
+	when box 1 is filled, box 1 turns off, box 2 turns on
+	when box 2 is filled, box 2 turns off, box 3 turns on
+	when box 3 is filled, box 3 turns off, box 4 turns on
+	
+	when box 4 is clicked, and all boxes are filled, we go to next page
+
+	if user clicks on any other box that data will store and still go through all 4 boxes
+
+	-->
+
+
+
+	<script>
+	var red=document.getElementsByClassName("tg-031e").style.attribute;
+	document.write(red);
+
+	function() {
+
+		document.getElementById(id).onclick=function(){
+			code
+		}
+	}
+
+	var x = document.getElementById("frm1");
+	var txt = "";
+	for (var i=0;i<x.length;i++)
+	  {
+	  txt = txt + x.elements[i].value + "<br>";
+	  }
+	document.getElementById("demo").innerHTML=txt;
+	
+
+	</script>
+
 		<div id = "large-plain-text">Tell us about yourself, traveller</div>
 
 	<div id = "center-container">
 
 		<table class="tg">
-			  <tr>
-			    <th class="tg-s6z2">
+
+			<tr>
+			    <td class="tg-031e">
+
 			    	<div id = "dashboard-cube-text">
 						<div id = "radio-buttons">
 							<input type="radio" name="sex" value="male">Male &nbsp;&nbsp;
-							<input type="radio" name="sex" value="female">Female
+							<input type="radio" name="sex" value="female">Female<br /><br /><br />
 						</div>
 					</div>
-			    </th>
+				
+			
 			    
-			    <th class="tg-031e">
+			    <td class="tg-031e">
 			    	<div id = "dashboard-cube-text">
 				    	<div id = "radio-buttons">
-							<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
-							<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
-							<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
+				    		I eat . . . </br>
+				    		<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
+							<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
+							<input type="radio" name="eat" value="vegan">Vegan
+							<br /><br />
 						</div>
 					</div>
-			    </th>
+			    </td>
 
-			  </tr>
+			</tr>
 
 			  <tr>
 			    <td class="tg-031e">
-			    	
 						<div id = "dashboard-cube-text">
-							I eat . . . </br>
+							
 							<div id = "radio-buttons">
-								<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
-								<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
-								<input type="radio" name="eat" value="vegan">Vegan
+								I have . . . <br />
+								<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
+								<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
+								<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
 							</div>
 						</div>
-					
-
 			    </td>
 			    <td class="tg-031e">
-
-					
 						<div id = "dashboard-cube-text">
 							I live in an . . . <br />
 							<div id = "radio-buttons">
 								<input type="radio" name="house" value="no-kids">Apartment &nbsp;&nbsp;
 								<input type="radio" name="house" value="baby"> House with a garden
+								<br />
+								<br />
 							</div>
 						</div>
-					
-
 			    </td>
 			  </tr>
 		</table>
@@ -91,10 +131,7 @@
 		<form action ="">
 
 		</form>
-	</div>
-
-	<clear>
-	
+	</div>	
 
 	</body>
 </html>
