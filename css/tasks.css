@@ -681,4 +681,24 @@ input:-moz-placeholder {
         to(#b9c5dd));
 }
 
+/* Starter Page*/
+
+#landfill-column {
+	width: 8%;
+	position: absolute;
+	height:80%;
+	min-width: 20px;
+}
+
+#super-hero img{
+	height:20em;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+#trash img {
+	height:30em;
+	text-align: right;
+	vertical-align: bottom;
+}
 
