@@ -22,8 +22,6 @@
 
 	6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
 
-
-
 	-->
 
 
@@ -32,46 +30,58 @@
 	<body>
 
 	<div id = "large-plain-text">Tell us about yourself, traveller</div>
-	
+
 	<div id = "center-container">
 
 		<table class="tg">
 
 			<tr>
-			    <td id="square1">
+			    <td id="square1" 
+			    onclick="document.getElementById('square2').style.background='#f94343'",
+			    onclick="document.getElementById('square1').style.background='white'">
 
 			    	<div id = "dashboard-cube-text">
-						<div id = "radio-buttons">
-							<input type="radio" name="sex" value="male">Male &nbsp;&nbsp;
-							<input type="radio" name="sex" value="female">Female<br /><br /><br />
-						</div>
+			    		<a href="#">
+							<div id = "radio-buttons">
+								<input type="radio" name="sex" value="male">Male &nbsp;&nbsp;
+								<input type="radio" name="sex" value="female">Female<br /><br /><br />
+							</div>
+						</a>
 					</div>
+					
+				</td>
 				
 			
 			    
-			    <td id="square2">
+			    <td id="square2" onclick="document.getElementById('square3').style.background='#f94343'"
+			    >
 			    	<div id = "dashboard-cube-text">
 				    	<div id = "radio-buttons">
 				    		I eat . . . </br>
-				    		<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
-							<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
-							<input type="radio" name="eat" value="vegan">Vegan
-							<br /><br />
+				    		<a href="#">
+					    		<input type="radio" name="eat" value="meat">Meat&nbsp;&nbsp;
+								<input type="radio" name="eat" value="dairy">Dairy&nbsp;&nbsp;
+								<input type="radio" name="eat" value="vegan">Vegan
+								<br /><br />
+							</a>
 						</div>
 					</div>
 			    </td>
 
+				
 			</tr>
 
 			  <tr>
-			    <td id="square3">
+			    <td id="square3" onclick="document.getElementById('square4').style.background='#f94343'">
 						<div id = "dashboard-cube-text">
 							
-							<div id = "radio-buttons">
+							<div id = "radio-buttons" >
 								I have . . . <br />
-								<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
-								<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
-								<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
+								<a href="#">
+									<input type="radio" name="kids" value="no-kids">No kids &nbsp;&nbsp;
+									<input type="radio" name="kids" value="baby">Baby/Expecting&nbsp;&nbsp;<br />
+									<input type="radio" name="kids" value="baby">Kids over 2 years&nbsp;
+								</a>
 							</div>
 						</div>
 			    </td>
