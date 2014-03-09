@@ -36,10 +36,32 @@
 		<table class="tg">
 
 			<tr>
-			    <td id="square1" 
-			    onclick="document.getElementById('square2').style.background='#f94343'",
-			    onclick="document.getElementById('square1').style.background='white'" 
-			    >
+				<script type="text/javascript">
+
+				function squareChange1() {
+					
+					document.getElementById('square2').style.background='#f94343';
+					
+					document.getElementById('square1').style.background='white';
+				}
+
+				function squareChange2() {
+					
+					document.getElementById('square3').style.background='#f94343';
+					
+					document.getElementById('square2').style.background='white';
+				}
+
+				function squareChange3() {
+					
+					document.getElementById('square4').style.background='#f94343';
+					
+					document.getElementById('square3').style.background='white';
+				}
+
+
+				</script>
+			    <td id="square1" onclick="squareChange1();">
 
 			    	<div id = "dashboard-cube-text">
 			    		<a href="#">
@@ -54,7 +76,7 @@
 				
 			
 			    
-			    <td id="square2" onclick="document.getElementById('square3').style.background='#f94343'"
+			    <td id="square2" onclick="squareChange2();"
 			    >
 			    	<div id = "dashboard-cube-text">
 				    	<div id = "radio-buttons">
@@ -73,7 +95,7 @@
 			</tr>
 
 			  <tr>
-			    <td id="square3" onclick="document.getElementById('square4').style.background='#f94343'">
+			    <td id="square3" onclick="squareChange3();">
 						<div id = "dashboard-cube-text">
 							
 							<div id = "radio-buttons" >

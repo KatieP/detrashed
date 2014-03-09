@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/tasks.css">
+		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
+		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
+		<link rel="stylesheet" href="fonts/bitstreamverasansmono_roman_macroman/stylesheet.css" type="text/css" />
+		
+	<!--
+	
+	Starting UI flow
+
+	1/ Questions - radion buttons
+
+	2/ Sign up - name, email, location (ask for metric or empirical)
+
+	3/ Starting data - 'You start with 1 tonne of trash. Your quest is to reduce this to zero'
+
+	4/ Tasks (first level) - 5 tasks
+
+	5/ Sucess page - Congratulations! You've cut x kg trash, 
+
+	6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
+
+	-->
+
+
+	</head>
+
+	<body>
+
+	<div id = "center-container">
+
+		<div id = "large-plain-text">Success! You've cut your trash by y%.</div>
+
+		<div id = "large-plain-text">You've cut x pounds of plastic from your yearly waste stream. So awesome!</div>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script>
+		$('.skill').on('click', 'button', function(){
+		    var skillBar = $(this).siblings().find('.inner');
+		    var skillVal = skillBar.attr("data-progress");
+		    $(skillBar).animate({
+		        height: skillVal
+		    }, 1500);
+		});
+		</script>
+
+
+	<div id ="landfill-column">
+		<div id = "general-text">Landfill score:<br />
+			1 tonne
+			<div class="skill">
+			    <div class="outer">
+			        <div class="inner" data-progress="100%" style="height: 100%;">
+			            <div></div>
+			        </div>        
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<div id = "large-plain-text">You saved a dolphin's life! </div>
+
+	
+	<div id = "arrow"><href="#">{</a></div>
+
+
+	</div>	
+
+
+	</body>
+</html>
