@@ -1,0 +1,76 @@
+/*questions.css*/
+
+/*ELEMENT STYLING*/
+body {
+  margin: 1.0em;
+  padding: 3%;
+  background-color: #f7efef;
+}
+
+p {
+  font-family: helvetica, arial, tahoma;
+}
+
+
+/*ID STYLING*/
+#large-plain-text {
+  font-family: 'bitstream_vera_sans_monoroman', helvetica, arial, tahoma;
+  color: gray;
+  font-size: 2.0em;
+  padding-top: .0em;
+  padding-bottom: 2.0em;
+  position: relative;
+  text-align: center;
+  line-height: 2.0em;
+}
+
+#center-container {
+  text-align: center;
+  margin: 5% 10% 5% 10%;
+}
+
+#arrow {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 3.0em;
+  text-align: right;
+  color: gray;
+  cursor: pointer;
+}
+
+
+#arrow .next{
+  font-family: 'bitstream_vera_sans_monoroman', helvetica, arial, tahoma;
+  font-size: 0.8em;
+  display:inline-block;
+  position:relative;
+  top: -20px;
+}
+
+
+#arrow .arrow {
+  font-family: 'entyporegular', helvetica, arial, tahoma;
+  font-size: 3.0em;
+  text-align: right;
+  text-decoration: none;
+}
+
+
+
+/*CLASS STYLING*/
+.tg  {
+  border-collapse:collapse;border-spacing:0;
+  text-align: center;
+  width:80%; margin:auto;
+  background-color: white;
+}
+
+.tg td{
+  font-family: helvetica, arial, tahoma;
+  color: #555;
+  font-size: 1.0em;
+  width:50%;
+  height:15em;
+  border: 1px solid #333;
+}
+

@@ -385,9 +385,7 @@ button {
 	text-decoration: none;
 }
 
-#dashboard-cube-text :hover {
-	color:#e0e0e0;
-}
+
 
 #dashboard-icons {
 	font-family: 'entyporegular', helvetica, arial, tahoma;
@@ -462,11 +460,20 @@ button {
 	background-color: white;
 }
 
+.square{
+  color:gray;
+}
+
+.square:hover{
+  color:#e5e5e5;
+}
+
+/*
 .tg .square1, td :hover {
 	background: #f94343;
 	color:#e5e5e5;
 }
-
+*/
 
 .tg td {
 	font-family:Arial, 
@@ -480,13 +487,14 @@ button {
 	width:40%;
 }
 
-
+/*
 .tg .tg-s6z2 :hover {
 	text-align:center;
 	background: #f94343;
 	color:#e5e5e5;
 
 }
+*/
 
 .square2 {
 	color:yellow;
@@ -516,12 +524,14 @@ button {
 	text-align: right;
 	line-height: 1.0em;
 	margin-right: 10%;
+	cursor: pointer;
 }
 
 #arrow :hover {
-	color:#f94343;
-	cursor: pointer; cursor: hand; 
+  color:#f94343;
 }
+
+
 
 /* Sign Up Form */
 

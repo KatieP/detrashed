@@ -3,46 +3,52 @@
 	<head>
 		<title>De Trashed - Zero Trash</title>
 
-		<!-- Javascript / Angular-->
-		<script type="text/javascript" src="js/lib/angular.js"></script>
-		<script type="text/javascript" src="js/lib/angular-resource.js"></script>
-
+		
 		<!-- CSS / Bootstrap -->
-		<link rel="stylesheet" type="text/css" href="css/tasks.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+		<!-- 
+			Note: commented out old stylesheet and breaking all pages stylesheets into separate files.
+			<link rel="stylesheet" type="text/css" href="css/tasks.css">
+		-->
+		<link rel="stylesheet" type="text/css" href="css/questions.css">
+
 
 		<!-- Fonts -->
 		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/bitstreamverasansmono_roman_macroman/stylesheet.css" type="text/css" />
 		
-	<!--
-	
-	Starting UI flow
+		<!--
+		
+		Starting UI flow for first time user
 
-	1/ Questions - radion buttons
+		1/ Questions - radio buttons (grap data)
 
-	2/ Sign up - name, email, location (ask for metric or empirical)
+		2/ Sign up - name, email, location (ask for metric or empirical) (grap data -> registration)
 
-	3/ Starting data - 'You start with 1 tonne of trash. Your quest is to reduce this to zero'
+		3/ Starting data - 'You start with 1 tonne of trash. Your quest is to reduce this to zero' (logged in as user)
 
-	4/ Tasks (first level) - 5 tasks
 
-	5/ Sucess page - Congratulations! You've cut x kg trash, 
+		User signed up, within the app
 
-	6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
+		4/ Tasks (first level) - 5 tasks
 
-	-->
+		5/ Sucess page - Congratulations! You've cut x kg trash, 
+
+		6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
+
+		-->
 
 
 	</head>
-
 	<body>
+		<div id = "center-container"></div>	
 
-	<div id = "large-plain-text">Index start</div>
-
-	<div id = "center-container"></div>	
-
+		<!-- Javascript / Angular-->
+		<script type="text/javascript" src="js/lib/angular.js"></script>
+		<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+		<script type="text/javascript" src="js/introduction.js"></script>
+		<script type="text/javascript">
+			introduction.init();
+		</script>
 	</body>
 </html>
