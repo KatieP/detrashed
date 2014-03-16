@@ -24,9 +24,9 @@ var introduction = {
       //bind all the button clicks on the page
       introduction.questions.q_bind_button_clicks();
       
-      //background styling of the squares on the questions page
       var e = '';
             
+      //background styling of the squares on the questions page
       //style first square (since its the only one that will be different to start out...)
       e = document.getElementById("square1");
       if(e != null && e != typeof 'undefined'){
@@ -158,7 +158,7 @@ var introduction = {
           if(introduction.questions.validateAllSquaresAnswered())
           {
             //go to the next page
-            alert("Go to the next page!");
+            introduction.questions.q_finish();
           }
           else
           {
@@ -377,6 +377,16 @@ var introduction = {
         e.style.background=introduction.questions.bg_color_pure_white;
         e.style.color=introduction.questions.text_color_dark; 
       }
+    },
+
+    q_finish: function(){
+
+      var center_container = document.getElementById("center-container");
+      if (center_container != null && center_container != typeof "undefined" ) {
+        center_container.innerHTML = ""; // clear the center_container
+
+        introduction.sign_up.print_sign_up_form();
+      }
     }
      
 
@@ -384,9 +394,143 @@ var introduction = {
   
   sign_up: {
 
+    su_init: function(){
+      //initialize something about the startup form...
+    },
+
+    print_sign_up_form: function(){
+
+      var center_container = document.getElementById("center-container");
+
+      if (center_container != null && center_container != typeof "undefined" ) {
+        
+        var sign_up = '';
+        sign_up += '<div class="container">'+
+          '<form id="signup">'+
+            '<div class="header">'+
+              '<p>Sign in with</p>'+
+              '<p>Facebook</p>'+
+              '<p>Twitter</p>'+
+            '</div>'+
+            '<div class="sep"></div>'+
+            '<div class="inputs">'+
+              '<input type="email" placeholder="username" autofocus />'+
+              '<input type="email" placeholder="e-mail" autofocus />'+
+              '<input type="password" placeholder="Password" />'+
+              '<div class="checkboxy">'+
+                '<input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>'+
+              '</div>'+
+              '<a id="submit" href="#">Let\'s do this</a>'+
+            '</div>'+
+          '</form>'+
+        '</div>'+
+        '<div id = "arrow"><href="#">{</a></div>';
+
+        center_container.innerHTML = sign_up;
+      }
+    }
+
   },
   
   starter: {
+
+  },
+
+  ajax: {
+
+    get: function(payload){
+      
+      //Note: the payload parameter should be in a format easy to 
+      //      turn into a JSON-RPC string, see documentation on format and structure:
+      //      http://www.jsonrpc.org/specification
+
+      //create the xmlhttprequest object
+      var xmlhttp;
+      if (window.XMLHttpRequest)
+      {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {
+        // code for IE6, IE5 (for legacy IE browsers)
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      
+      //to perform a "synchronous" request (aka "blocking")
+      /*
+        xmlhttp.open("GET","demo_get.asp?t=" + Math.random(),false);
+        xmlhttp.send();
+      */
+
+      //to send an asynchronous request and invalidate the cache (to get a fresh page)
+      //add a random param to the query string
+      /*
+        xmlhttp.open("GET","demo_get.asp?t=" + Math.random(),true);
+        xmlhttp.send();
+      */
+
+      var method = "GET";
+      var url = "someurl.com/ajax.handler?p="+payload;
+      var async = "true";
+
+      //define the "callback" that handles the response from the server
+      xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+          //ex: document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+
+
+        }
+      }
+
+      xmlhttp.open(method,url,async);
+      xmlhttp.send();
+    },
+
+    post: function(){
+
+      //create the xmlhttprequest object
+      var xmlhttp;
+      if (window.XMLHttpRequest)
+      {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {
+        // code for IE6, IE5 (for legacy IE browsers)
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      
+      //to perform a "synchronous" request (aka "blocking")
+      /*
+        xmlhttp.open("GET","demo_get.asp?t=" + Math.random(),false);
+        xmlhttp.send();
+      */
+
+      //to send an asynchronous request and invalidate the cache (to get a fresh page)
+      /*
+        xmlhttp.open("GET","demo_get.asp?t=" + Math.random(),true);
+        xmlhttp.send();
+      */
+
+      var method = "POST";
+      var url = "someurl.com/post.handler";
+      var async = "true";
+
+      //define the "callback" that handles the response from the server
+      xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+          //ex: document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+
+
+        }
+      }
+
+      xmlhttp.open(method,url,async);
+      xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+      xmlhttp.send("fname=Henry&lname=Ford");
+    }
 
   },
 
