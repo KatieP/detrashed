@@ -187,13 +187,13 @@ var introduction = {
         
         var questions_table = '<div id = "large-plain-text">Tell us about yourself, traveler</div><table class="tg">' +
             '<tr>' +
-              '<td id="square1" class="square">'+             
+              '<td id="square1" class="square top-left">'+             
                 'I am a...<br/><br/>' +   
                 '<input id="sexM" type="radio"/>Male'+
                 '&nbsp;&nbsp;'+
                 '<input id="sexF" type="radio"/>Female'+
               '</td>'+
-              '<td id="square2" class="square">'+
+              '<td id="square2" class="square top-right">'+
                 'I eat . . . <br/><br/>'+
                 '<input id="carnivore" type="radio"/>Carnivore'+
                 '&nbsp;&nbsp;'+
@@ -203,7 +203,7 @@ var introduction = {
               '</td>'+
             '</tr>'+
             '<tr>'+
-              '<td id="square3" class="square">'+
+              '<td id="square3" class="square bottom-left">'+
                 'I have . . . <br/><br/>'+
                 '<input id="no-kids" type="radio"/>No kids' +
                 '&nbsp;&nbsp;'+
@@ -211,7 +211,7 @@ var introduction = {
                 '&nbsp;&nbsp;'+
                 '<input id="kids" type="radio"/>Kids over 2 years'+
               '</td>'+
-              '<td id="square4">'+
+              '<td id="square4" class="square bottom-right">'+
                 'I have a garden . . . <br/><br/>'+
                 '<input id="garden-yes" type="radio"/>Yes' +
                 '&nbsp;&nbsp;'+
