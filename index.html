@@ -4,26 +4,17 @@
 		<title>De Trashed - Zero Trash</title>
 		
 		<!--
-		
 			Starting UI flow for first time user
 
 			1/ Questions - radio buttons (grap data)
-
 			2/ Sign up - name, email, location (ask for metric or empirical) (grap data -> registration)
-
 			3/ Starting data - 'You start with 1 tonne of trash. Your quest is to reduce this to zero' (logged in as user)
 
-
 			User signed up, within the app
-
 			4/ Tasks (first level) - 5 tasks
-
 			5/ Sucess page - Congratulations! You've cut x kg trash, 
-
 			6/ Level complete - You get a happy dolphin! You've saved 5 albatross's lives :)
-
 		-->
-
 		
 		<!-- CSS / Bootstrap -->
 		<!-- 
@@ -44,6 +35,16 @@
 		<script type="text/javascript" src="js/lib/angular.js"></script>
 		<script type="text/javascript" src="js/lib/angular-resource.js"></script>
 		<script type="text/javascript" src="js/introduction.js"></script>
+
+		<!-- Javascript / Angular for user login authentication -->
+		<script type = "text/javascript" src='js/login/routingConfig.js'></script>
+        <script type = "text/javascript" src='js/login/app.js'></script>
+        <script type = "text/javascript" src='js/login/services.js'></script>
+        <script type = "text/javascript" src='js/login/controllers.js'></script>
+        <script type = "text/javascript" src='js/login/filters.js'></script>
+        <script type = "text/javascript" src='js/login/directives.js'></script>
+
+
 		<script type="text/javascript">
 			introduction.init();
 		</script>
