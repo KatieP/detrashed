@@ -1,6 +1,6 @@
 body {
 	margin: 1.0em;
-	padding: 3%;
+	padding: 0 3% 3% 3%;
 	background-color: #f7efef;
 }
 
@@ -240,8 +240,6 @@ button {
 	list-style-type:none;
 	margin:0;
 	padding:0;
-	margin-bottom: 2em;
-	line-height: 2em;
 }
 
 #dashboard-nav li {
@@ -431,13 +429,10 @@ button {
 
 #main-icon {
 	font-family: 'entyporegular', helvetica, arial, tahoma;
-	color:#e0e0e0;
-	font-size: 6.0em;
-	text-align: center;
+	color:gray;
+	font-size: 5.0em;
 	line-height: 1.0em;
-	position: absolute;
-	top:90%;
-
+	display: inline-block;
 }
 
 

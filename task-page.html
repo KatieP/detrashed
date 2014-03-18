@@ -1,11 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html ng-app>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/tasks.css">
 		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
 		
+
+
 		<!--Landfill vertical banner js-->
+		<title>Detrashed Tasks </title>
 
 
 	</head>
@@ -23,39 +26,52 @@
 		});
 		</script>
 
+	<!-- Nav Link to Dashboard-->
 
+	<div id = "dashboard-nav">
+		<div id = "dashboard-nav">
+			<ul>
+				<li><div id = "main-icon">4</div>
+				</li>
+				<li><a href="#">TASKS</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+
+	<!-- Username Logged in-->
+	
+	<!-- Left column Landfill Score-->
 	<div id ="left-column">
 		<div id = "general-text">Landfill score<br />
 			67%
-			
-			<div class="skill">
-			    
+			<div class="skill"> 
 			    <div class="outer">
 			        <div class="inner" data-progress="57%" style="height: 57%;">
 			            <div></div>
-
 			        </div>        
 			    </div>
 			    <button>Show value</button>
 			</div>
-			
 		</div>
 	</div>
 
-	<a href="#"><div id = "main-icon">4</div></a>
+	
 
 	<div id ="centre-column">
 
-		<div id ="slide-container">
-			<div id = "general-text">#34 Your task title</div>
+		<div id ="slide-container" ng-controller="Task">
+			<div id = "general-text">{{task.number}} Task #34 {{task.title}} Your task title</div>
 			<div id = "task-text"> 
+				{{task.text}}
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</div>
 			<div id = "task-image"><img src = "images/product-image.png" width=100% height=100%>
 
 			</div>
+
 
 
 		</div>
@@ -78,26 +94,33 @@
 						<input type="checkbox" name="vehicle" value="3"><br /><em>I'm a master, been doing it for 12 months</em>
 					</div>
 
+					<!-- When the arrow is clicked, the task changes
+						 #Title
+						 #Task Number
+						 #Text
+						 #Image
+						 #Checkboxes saved data to user
+						 #Check boxes cleared
+						 #Landfill score re-valued
+						 #Progress bar updated
+					-->
+					<div id="arrow"><span class="arrow">{</span></div>
 				</div>
 			</form>
-
 		</div>
-
-
-
-
 
 		<div id ="progress-bar-container"> 
 			<div id = "general-text">Your Progress</div>
-
 			<div id="progress-bar">
   				<div></div>
 			</div>
-
 		</div>
-
-
 	</div>
+
+	<script type="text/javascript" src="js/lib/angular.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+	<script type="text/javascript" src="js/introduction.js"></script>
+	<script type="text/javascript" src="js/controllers/app.js"></script>
 
 	</body>
 </html>

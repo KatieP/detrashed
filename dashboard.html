@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html ng-app>
 	<head>
+		<title>Detrashed Dashboard</title>
 		<link rel="stylesheet" type="text/css" href="css/tasks.css">
 		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
@@ -30,6 +31,18 @@
 				<li><a href="#">SHOP</a></li>
 				<li><a href="#">MY ACCOUNT</a></li>
 			</ul>
+
+			<ul ng-repeat="Site Nav">
+				<li><a href="#">{{ nav.data }}</a></li>
+				<li><a href="#">{{ nav.tasks }}</a></li>
+				<li><a href="#">{{ nav.progress }}</a></li>
+				<li><a href="#">{{ nav.community }}</a></li>
+				<li><a href="#">{{ nav.news }}</a></li>
+				<li><a href="#">{{ nav.shop }}</a></li>
+				<li><a href="#">{{ nav.account }}</a></li>
+			</ul>
+
+
 		</div>
 	</div> 
 
@@ -100,6 +113,10 @@
 			</ul>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="js/lib/angular.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+	<script type="text/javascript" src="js/introduction.js"></script>
 
 	</body>
 </html>
