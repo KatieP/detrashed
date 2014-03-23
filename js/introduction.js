@@ -185,39 +185,40 @@ var introduction = {
       */
         
         
-        var questions_table = '<div id = "large-plain-text">Tell us about yourself, traveler</div><table class="tg">' +
-            '<tr>' +
-              '<td id="square1" class="square top-left">'+             
-                'I am a...<br/><br/>' +   
-                '<input id="sexM" type="radio"/>Male'+
-                '&nbsp;&nbsp;'+
-                '<input id="sexF" type="radio"/>Female'+
-              '</td>'+
-              '<td id="square2" class="square top-right">'+
-                'I eat . . . <br/><br/>'+
-                '<input id="carnivore" type="radio"/>Carnivore'+
-                '&nbsp;&nbsp;'+
-                '<input id="vegetarian" type="radio"/>Vegetarian'+
-                '&nbsp;&nbsp;'+
-                '<input id="vegan" type="radio"/>Vegan'+
-              '</td>'+
-            '</tr>'+
-            '<tr>'+
-              '<td id="square3" class="square bottom-left">'+
-                'I have . . . <br/><br/>'+
-                '<input id="no-kids" type="radio"/>No kids' +
-                '&nbsp;&nbsp;'+
-                '<input id="baby" type="radio"/>Baby/Expecting'+
-                '&nbsp;&nbsp;'+
-                '<input id="kids" type="radio"/>Kids over 2 years'+
-              '</td>'+
-              '<td id="square4" class="square bottom-right">'+
-                'I have a garden . . . <br/><br/>'+
-                '<input id="garden-yes" type="radio"/>Yes' +
-                '&nbsp;&nbsp;'+
-                '<input id="garden-no" type="radio"/>No'+
-              '</td>'+
-            '</tr>'+
+        var questions_table = '<div class="large-plain-text">Tell us about yourself, traveler</div>'+
+        '<table class="tg">' +
+          '<tr>' +
+            '<td id="square1" class="square top-left">'+             
+              'I am a...<br/><br/>' +   
+              '<input id="sexM" type="radio"/>Male'+
+              '&nbsp;&nbsp;'+
+              '<input id="sexF" type="radio"/>Female'+
+            '</td>'+
+            '<td id="square2" class="square top-right">'+
+              'I eat . . . <br/><br/>'+
+              '<input id="carnivore" type="radio"/>Carnivore'+
+              '&nbsp;&nbsp;'+
+              '<input id="vegetarian" type="radio"/>Vegetarian'+
+              '&nbsp;&nbsp;'+
+              '<input id="vegan" type="radio"/>Vegan'+
+            '</td>'+
+          '</tr>'+
+          '<tr>'+
+            '<td id="square3" class="square bottom-left">'+
+              'I have . . . <br/><br/>'+
+              '<input id="no-kids" type="radio"/>No kids' +
+              '&nbsp;&nbsp;'+
+              '<input id="baby" type="radio"/>Baby/Expecting'+
+              '&nbsp;&nbsp;'+
+              '<input id="kids" type="radio"/>Kids over 2 years'+
+            '</td>'+
+            '<td id="square4" class="square bottom-right">'+
+              'I have a garden . . . <br/><br/>'+
+              '<input id="garden-yes" type="radio"/>Yes' +
+              '&nbsp;&nbsp;'+
+              '<input id="garden-no" type="radio"/>No'+
+            '</td>'+
+          '</tr>'+
         '</table>'+
         '<div id="arrow"><span class="next">Next&nbsp;</span><span class="arrow">{</span></div>';
     
@@ -405,26 +406,46 @@ var introduction = {
       if (center_container != null && center_container != typeof "undefined" ) {
         
         var sign_up = '';
-        sign_up += '<div class="container">'+
-          '<form id="signup">'+
-            '<div class="header">'+
-              '<p>Sign in with</p>'+
-              '<p>Facebook</p>'+
-              '<p>Twitter</p>'+
-            '</div>'+
-            '<div class="sep"></div>'+
-            '<div class="inputs">'+
-              '<input type="email" placeholder="username" autofocus />'+
-              '<input type="email" placeholder="e-mail" autofocus />'+
-              '<input type="password" placeholder="Password" />'+
-              '<div class="checkboxy">'+
-                '<input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>'+
+        sign_up += '<div class="large-plain-text">Almost Complete!</div>'+
+        '<table class="container">'+
+          '<tr>'+
+            '<td>'+
+              '<div class="header">'+
+                '<p>Create an Account</p>'+
               '</div>'+
-              '<a id="submit" href="#">Let\'s do this</a>'+
-            '</div>'+
-          '</form>'+
-        '</div>'+
-        '<div id = "arrow"><href="#">{</a></div>';
+              '<div class="sep"></div>'+              
+            '</td>'+
+            '<td>'+
+              '<div class="header">'+
+                '<p>Sign in with Facebook or Twitter</p>'+
+              '</div>'+
+              '<div class="sep"></div>'+
+            '</td>'+
+          '</tr>'+
+          '<tr>'+
+            '<td class="left width50">'+            
+              '<form id="signup">'+
+                '<div class="inputs">'+
+                  '<input type="email" placeholder="username" autofocus />'+
+                  '<input type="email" placeholder="e-mail" />'+
+                  '<input type="password" placeholder="Password" />'+
+                  '<div class="checkboxy">'+
+                    '<input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>'+
+                  '</div>'+
+                  '<a id="submit" href="#">Let\'s do this</a>'+
+                '</div>'+
+              '</form>'+
+            '</td>' +
+            '<td class="right width50">' +               
+              '<div class="login-api-box">'+
+              'todo: facebook javascript api login'+
+              '</div>'+
+              '<div class="login-api-box">'+
+              'todo: twitter javascript api login'+
+              '</div>'+
+            '</td>' +
+          '</tr>'+
+        '</table>';
 
         center_container.innerHTML = sign_up;
       }

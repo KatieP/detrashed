@@ -1,8 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html ng-app>
+<!DOCTYPE html>
+<html>
 	<head>
 		<title>De Trashed - Zero Trash</title>
-		
+		<meta charset="UTF-8">
 		<!--
 		
 			Starting UI flow for first time user
@@ -28,21 +28,20 @@
 		<!-- CSS / Bootstrap -->
 		<!-- 
 			Note: commented out old stylesheet and breaking all pages stylesheets into separate files.
-		-->
 		<link rel="stylesheet" type="text/css" href="css/tasks.css">
-		<link rel="stylesheet" type="text/css" href="css/questions.css">
+		-->
+		<link rel="stylesheet" type="text/css" href="css/master.css"/>
 
 		<!-- Fonts -->
 		<link rel="stylesheet" href="fonts/myunderwood/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/entypo/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="fonts/bitstreamverasansmono_roman_macroman/stylesheet.css" type="text/css" />
 	</head>
-	<body>
+	<body>		
+		<!-- App Container -->
 		<div id = "center-container"></div>	
 
-		<!-- Javascript / Angular-->
-		<script type="text/javascript" src="js/lib/angular.js"></script>
-		<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+		<!-- Javascript -->
 		<script type="text/javascript" src="js/introduction.js"></script>
 		<script type="text/javascript">
 			introduction.init();
