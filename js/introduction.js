@@ -3,7 +3,14 @@
 var introduction = {
   
   init: function(){
+    //Initialize the app here.
+
+    //questions page initialization
     introduction.questions.q_init();
+
+    //sign up page initialization
+    introduction.sign_up.su_init();
+
   },
 
   questions: {
@@ -385,8 +392,8 @@ var introduction = {
       var center_container = document.getElementById("center-container");
       if (center_container != null && center_container != typeof "undefined" ) {
         center_container.innerHTML = ""; // clear the center_container
-
-        introduction.sign_up.print_sign_up_form();
+        introduction.sign_up.print_sign_up_form(); // display the sign up form
+        introduction.sign_up.su_init(); // call the initialization for the sign up form
       }
     }
      
@@ -396,7 +403,18 @@ var introduction = {
   sign_up: {
 
     su_init: function(){
-      //initialize something about the startup form...
+      //initialize the sign up form...
+      introduction.sign_up.su_bind_buttons();
+    },
+
+    su_bind_buttons: function(){
+      //button bindings
+      var e;
+
+      e = document.getElementById("submit");
+      if(e != null && e != typeof 'undefined'){
+        e.onclick = introduction.sign_up.su_submit;
+      }
     },
 
     print_sign_up_form: function(){
@@ -426,13 +444,13 @@ var introduction = {
             '<td class="left width50">'+            
               '<form id="signup">'+
                 '<div class="inputs">'+
-                  '<input type="email" placeholder="username" autofocus />'+
-                  '<input type="email" placeholder="e-mail" />'+
-                  '<input type="password" placeholder="Password" />'+
+                  '<input type="email" id="username" placeholder="username" autofocus />'+
+                  '<input type="email" id="email" placeholder="e-mail" />'+
+                  '<input type="password" id="password" placeholder="Password" />'+
                   '<div class="checkboxy">'+
                     '<input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>'+
                   '</div>'+
-                  '<a id="submit" href="#">Let\'s do this</a>'+
+                  '<input type="button" id="submit" value="Let\'s do this" />'+
                 '</div>'+
               '</form>'+
             '</td>' +
@@ -449,6 +467,41 @@ var introduction = {
 
         center_container.innerHTML = sign_up;
       }
+    },
+
+    su_submit: function(){
+      //username, email, password
+      var e, username, email, password, data;
+
+      //get username
+      e = document.getElementById("username");
+      if(e != null && e != typeof 'undefined'){
+        username = e.value;
+      }
+
+      //get email
+      e = document.getElementById("email");
+      if(e != null && e != typeof 'undefined'){
+        email = e.value;
+      }
+
+      //get password
+      e = document.getElementById("password");
+      if(e != null && e != typeof 'undefined'){
+        password = e.value;
+      }
+
+      //pack data into a JSON object
+      data = {
+        "username": username,
+        "email": email,
+        "password": password
+      };
+
+      //send the response
+      introduction.ajax.post("",data, function(xhr){
+        alert(xhr.responseText)
+      });
     }
 
   },
@@ -491,8 +544,8 @@ var introduction = {
         xmlhttp.send();
       */
 
+      var url = "api_public.php?p="+payload;
       var method = "GET";
-      var url = "someurl.com/ajax.handler?p="+payload;
       var async = "true";
 
       //define the "callback" that handles the response from the server
@@ -508,10 +561,10 @@ var introduction = {
       xmlhttp.send();
     },
 
-    post: function(){
+    post: function(url, data, callback){
 
+      var xmlhttp, method, async;
       //create the xmlhttprequest object
-      var xmlhttp;
       if (window.XMLHttpRequest)
       {
         // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -521,6 +574,14 @@ var introduction = {
       {
         // code for IE6, IE5 (for legacy IE browsers)
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      //set the type of ajax call to be sent
+      method = "POST";      
+      //asynchronous or synchronous
+      async = "true";
+      //set a default POST URL
+      if(url == "" || url == null){
+        url = "api_public.php";        
       }
       
       //to perform a "synchronous" request (aka "blocking")
@@ -535,22 +596,18 @@ var introduction = {
         xmlhttp.send();
       */
 
-      var method = "POST";
-      var url = "someurl.com/post.handler";
-      var async = "true";
-
       //define the "callback" that handles the response from the server
       xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
           //ex: document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-
-
+          callback(xmlhttp);
         }
       }
 
+      //open, set the header and send the call
       xmlhttp.open(method,url,async);
-      xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-      xmlhttp.send("fname=Henry&lname=Ford");
+      xmlhttp.setRequestHeader("Content-type","application/json");
+      xmlhttp.send(data);
     }
 
   },
